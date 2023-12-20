@@ -1,0 +1,4 @@
+<p-card styleClass="m-3" [header]="weather.title" *ngFor="let weather of weatherItems">
+  <div class="flex align-items-center" [innerHTML]="weather.content"></div>
+  <p>{{weather.pubDate}}</p>
+</p-card>

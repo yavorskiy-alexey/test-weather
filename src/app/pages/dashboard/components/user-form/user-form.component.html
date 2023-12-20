@@ -1,0 +1,23 @@
+<ng-container [formGroup]="form">
+  <div class="field grid">
+    <label for="firstname" class="col-fixed" style="width:100px">First name</label>
+    <div class="col">
+      <input type="text" id="firstName" pInputText formControlName="firstName"/>
+    </div>
+  </div>
+  <div class="field grid">
+    <label for="lastName" class="col-fixed" style="width:100px">Last name</label>
+    <div class="col">
+      <input type="text" id="lastName" pInputText formControlName="lastName"/>
+    </div>
+  </div>
+  <div class="field grid">
+    <label for="email" class="col-fixed" style="width:100px">Email</label>
+    <div class="col">
+      <input type="text" id="email" pInputText formControlName="email"/>
+    </div>
+  </div>
+</ng-container>
+<div class="flex justify-content-end">
+  <button class="m-2" (click)="continue()" [disabled]="form.invalid" pButton>Continue</button>
+</div>

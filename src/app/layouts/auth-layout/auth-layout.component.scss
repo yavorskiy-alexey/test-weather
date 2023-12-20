@@ -1,0 +1,8 @@
+@import '../../../styles';
+
+:host {
+  .wrapper {
+    height: calc(100vh - $header-height);
+    margin-top: $header-height;
+  }
+}

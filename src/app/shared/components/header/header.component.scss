@@ -1,0 +1,9 @@
+@import '../../../../styles';
+:host {
+  position: fixed;
+  padding: 0.5rem;
+  background-color: #DCDCDC;
+  height: $header-height;
+  width: 100%;
+  z-index: 1000;
+}

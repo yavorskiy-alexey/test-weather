@@ -1,0 +1,7 @@
+<div class="flex flex-column align-items-center mt-5">
+  <p-dropdown [options]="countries" [(ngModel)]="selectedCountry"
+              optionLabel="name"  styleClass="w-15rem" [showClear]="true"
+              placeholder="Select a Country" (onChange)="onSelectCountry($event)">
+  </p-dropdown>
+  <app-weather [weatherItems]="weatherItems$ | async"></app-weather>
+</div>
